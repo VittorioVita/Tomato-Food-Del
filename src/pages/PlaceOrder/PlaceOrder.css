@@ -1,0 +1,121 @@
+.place-order{
+    display: flex;
+    align-items: start; 
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+
+}
+
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+
+
+
+.place-order-left .title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.place-order .cart-total-button{
+    margin-top: 30px;
+}
+
+
+
+.place-order{
+    display: flex;
+    align-items: start; 
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 24px;
+}
+
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+
+.place-order-left .title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.place-order .cart-total-button{
+    margin-top: 30px;
+}
+
+/* ==================================== */
+/* MEDIA QUERIES               */
+/* ==================================== */
+
+/* Per schermi più piccoli di 1050px (es. tablet grandi) */
+@media (max-width: 1050px) {
+    .place-order{
+        gap: 30px; /* Riduciamo lo spazio tra le colonne */
+    }
+    .place-order-left{
+        max-width: 45%; /* Aumentiamo leggermente lo spazio per il contenuto */
+    }
+    .place-order-right{
+        max-width: 45%;
+    }
+}
+
+
+/* Per schermi più piccoli di 768px (es. tablet verticali e smartphone) */
+@media (max-width: 768px) {
+    .place-order{
+        flex-direction: column; /* Impila le colonne una sopra l'altra */
+        align-items: stretch; /* Fai in modo che le colonne occupino tutta la larghezza */
+        gap: 30px;
+    }
+    .place-order-left, .place-order-right {
+        max-width: 100%; /* Rimuoviamo la larghezza massima per farle espandere */
+    }
+    .place-order-left .title {
+        margin-bottom: 30px; /* Riduciamo un po' il margine per risparmiare spazio */
+    }
+}
